@@ -1,0 +1,23 @@
+.body {
+  &__header {
+    margin-top: 10%;
+    text-align: center;
+  }
+  &__content {
+    mat-grid-list {
+      mat-grid-tile {
+        button {
+          width: 100%;
+          margin-right: 5%;
+          margin-left: 5%;
+          padding-top: 5%;
+          padding-bottom: 5%;
+          border-radius: 20px;
+          background: #3880ff;
+          color: #fff;
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}

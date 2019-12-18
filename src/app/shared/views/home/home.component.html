@@ -1,3 +1,17 @@
-<p>
-  home works!
-</p>
+<div class="body">
+  <div class="body__header">
+    <h1 class="mat-display-1">Seleccionar una opción</h1>
+  </div>
+  <div class="body__content">
+    <mat-grid-list
+      [cols]="breakpoint"
+      rowHeight="2:0.5"
+      (window:resize)="onResize($event)"
+    >
+      <mat-grid-tile><button mat-button>Facturas</button></mat-grid-tile>
+      <mat-grid-tile><button mat-button>Presupuestos</button></mat-grid-tile>
+      <mat-grid-tile><button mat-button>Clientes</button></mat-grid-tile>
+      <mat-grid-tile><button mat-button>Productos</button></mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>
