@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: "",
     loadChildren: "./shared/shared.module#SharedModule"
+  },
+  {
+    path:"clients",
+    loadChildren: "./clients/clients.module#ClientsModule"
   }
 ];
 

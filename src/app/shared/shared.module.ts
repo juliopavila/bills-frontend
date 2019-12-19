@@ -1,22 +1,22 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { HomeComponent } from './views/home/home.component';
-import { RouterModule } from '@angular/router';
-import { MaterialModule } from '../material';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { HomeComponent } from "./views/home/home.component";
+import { RouterModule } from "@angular/router";
+import { MaterialModule } from "../material";
+import { HeaderComponent } from "./components/header/header.component";
 
 @NgModule({
-  declarations: [
-    HomeComponent
-  ],
+  declarations: [HomeComponent, HeaderComponent],
   imports: [
     CommonModule,
     MaterialModule,
     RouterModule.forChild([
       {
-        path: '',
+        path: "",
         component: HomeComponent
       }
     ])
-  ]
+  ],
+  exports: [HeaderComponent]
 })
-export class SharedModule { }
+export class SharedModule {}

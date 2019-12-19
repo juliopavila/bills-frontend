@@ -8,10 +8,9 @@
       rowHeight="2:0.5"
       (window:resize)="onResize($event)"
     >
-      <mat-grid-tile><button mat-button>Facturas</button></mat-grid-tile>
-      <mat-grid-tile><button mat-button>Presupuestos</button></mat-grid-tile>
-      <mat-grid-tile><button mat-button>Clientes</button></mat-grid-tile>
-      <mat-grid-tile><button mat-button>Productos</button></mat-grid-tile>
+      <mat-grid-tile *ngFor="let a of actions" routerLink="{{a.path}}">
+        <button mat-button>{{a.name}}</button>
+      </mat-grid-tile>
     </mat-grid-list>
   </div>
 </div>
